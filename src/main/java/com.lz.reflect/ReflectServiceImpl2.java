@@ -18,7 +18,7 @@ public class ReflectServiceImpl2 {
         ReflectServiceImpl2 object = null;
         try {
             try {
-                object = (ReflectServiceImpl2) Class.forName("main.java.com.lz.reflect").getConstructor(String.class).newInstance("张三");
+                object = (ReflectServiceImpl2) Class.forName("com.lz.reflect.ReflectServiceImpl2").getConstructor(String.class).newInstance("张三");
             } catch (InstantiationException e) {
                 e.printStackTrace();
             } catch (IllegalAccessException e) {

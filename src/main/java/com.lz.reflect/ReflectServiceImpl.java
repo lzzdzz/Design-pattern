@@ -17,7 +17,7 @@ public class ReflectServiceImpl {
     public ReflectServiceImpl getInstance(){
         ReflectServiceImpl object = null;
         try {
-            object = (ReflectServiceImpl) Class.forName("com.lz.test.ReflectServiceImpl").newInstance();
+            object = (ReflectServiceImpl) Class.forName("com.lz.reflect.ReflectServiceImpl").newInstance();
         } catch (InstantiationException e) {
             e.printStackTrace();
         } catch (IllegalAccessException e) {
