@@ -8,7 +8,7 @@
 构造方法中无参数时,**反射对象**：object = (ReflectServiceImpl) Class.forName("com.lz.reflect.ReflectServiceImpl").newInstance();<br>
 构造方法中有参数时，**反射对象**：object = (ReflectServiceImpl2) Class.forName("com.lz.reflect.ReflectServiceImpl2").getConstructor(String.class).newInstance("张三");
 
-反射方法：<br>
+==反射方法==：<br>
 Method method = target.getClass().getMethod("sayHello", String.class);
             returnObj = method.invoke(target,"张三");
 <br>或者：<br>
