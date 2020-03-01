@@ -1,8 +1,11 @@
 package singleton;
 
+import java.util.*;
+
 /**
  * 单例测试
- * singleObject和singleObject1的对象是同一个
+ * 一般情况下，建议使用饿汉式，不建议使用懒汉式
+ * 有懒汉式需求时可以使用静态内部类/登记式，需要需要序列化时使用枚举式，有其他需求使用双锁式
  */
 public class SingletonPatternDemo {
     public static void main(String[] args) {
@@ -38,6 +41,7 @@ public class SingletonPatternDemo {
 
         //枚举式
         System.out.println(SingletonEnum.INSTANCE);
-
+        List<Integer> list = new LinkedList<>();
+        List<Integer> list1 = new ArrayList<>();
     }
 }
