@@ -11,9 +11,9 @@ public class DeepClone {
         //一级对象
         System.out.println(p == p2);//false
         //二级对象
-        System.out.println(p.personInfo2 == p2.personInfo2);//true
+        System.out.println(p.personInfo2 == p2.personInfo2);//false
         //三级对象
-        System.out.println(p.personInfo2.name == p2.personInfo2.name);//true
+        System.out.println(p.personInfo2.name == p2.personInfo2.name);//false
     }
 }
 
